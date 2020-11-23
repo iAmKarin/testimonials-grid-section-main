@@ -123,6 +123,7 @@ main {
     grid-area: test3;
     background-color: var(--white);
 }
+
 .testemonial-4 {
     grid-area: test4;
     background-color: var(--white);
@@ -143,6 +144,66 @@ main {
 .dark-grey {
     color: var(--darkGrey);
 }
+
+@media only screen and (max-width: 1150px) {
+    body {
+      background-color: var(--backMain);
+    }
+    main {
+        grid-template-columns: repeat(3, 255px);
+        grid-template-rows: 28.2rem 26.6rem 26.6rem;
+        grid-template-areas: 
+        "test1 test1 test2"
+        "test4 test5 test5"
+        "test3 test3 test3";
+        grid-column-gap: 3rem;
+        grid-row-gap: 2.4rem;
+        justify-content: center;
+        align-content: center;
+        letter-spacing: .03px;
+        margin-top: 7.1rem;
+        margin-bottom: 7.1rem;
+    }
+  }
+
+  @media only screen and (max-width: 850px) {
+    main {
+        grid-template-columns: repeat(2, 255px);
+        grid-template-rows: 28.2rem 26.6rem 28.2rem 26.6rem;
+        grid-template-areas: 
+        "test1 test1"
+        "test2 test4"
+        "test5 test5"
+        "test3 test3";
+        grid-column-gap: 3rem;
+        grid-row-gap: 2.4rem;
+        justify-content: center;
+        align-content: center;
+        letter-spacing: .03px;
+        height: auto;
+        margin-top: 7.1rem;
+        margin-bottom: 7.1rem;
+    }
+  }
+  @media only screen and (max-width: 570px) {
+    main {
+        grid-template-columns: 32.7rem;
+        grid-template-rows: 44.4rem 24rem 22.2rem 38.4rem 43.8rem;
+        grid-template-areas: 
+        "test1"
+        "test2"
+        "test4"
+        "test5"
+        "test3";
+        grid-row-gap: 2.4rem;
+        justify-content: center;
+        align-content: center;
+        letter-spacing: .03px;
+    }
+    .info-2 {
+        margin-top: 1.6rem;
+    }
+  }
 
 
 
